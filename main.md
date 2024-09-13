@@ -23,16 +23,18 @@ if (videoId === null) {
             const description = videoData.items[0].snippet.description; 
             const thumbnailUrl = videoData.items[0].snippet.thumbnails.medium.url;
 
-            const richPreview = ` <div style="display: flex; align-items: center; max-width: 100vw; font-family: Arial, sans-serif; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-    <div style="flex-shrink: 0; width: 250px; height: 135px;">
-        <img src="${thumbnailUrl}" alt="${title}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+            const richPreview = ` <a href="https://example.com" style="text-decoration: none;">
+    <div style="display: flex; align-items: center; max-width: 100vw; font-family: Arial, sans-serif; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <div style="flex-shrink: 0; width: 250px; height: 135px;">
+            <img src="${thumbnailUrl}" alt="${title}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+        </div>
+        <div style="margin-left: 15px; padding: 10px;">
+            <h2 style="margin: 0 0 5px; font-size: 16px; color: #333;">${title}</h2>
+            <p style="margin: 0; font-size: 12px; color: #666;">${description.substring(0, 100)}...</p>
+            <p style="font-size: 10px; color: #888;">Click to watch on YouTube</p>
+        </div>
     </div>
-    <div style="margin-left: 15px; padding: 10px;">
-        <h2 style="margin: 0 0 5px; font-size: 16px; color: ##ffffff;">${title}</h2>
-        <p style="margin: 0; font-size: 12px; color: #878484;">${description.substring(0, 100)}...</p>
-        <p style="font-size: 10px; color: #888;">Click to watch on YouTube</p>
-    </div>
-</div> `
+</a>`
         tR += richPreview
             }
         }
