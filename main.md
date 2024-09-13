@@ -11,4 +11,9 @@ if (videoId === null) {
     const apiKey = "<API KEY>";
     const response = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${apiKey}`);
 
+    if (!response.ok) {
+        tR += "> [!Error]\n> Failed to fetch YouTube video data.";
+    } else {
+        const videoData = await response.json();
+
 -%>
