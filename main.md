@@ -33,6 +33,7 @@ if (videoId === null) {
         <p style="font-size: 10px; color: #888;">Click to watch on YouTube</p>
     </div>
 </div> `
+        tR += richPreview
             }
         }
     }
