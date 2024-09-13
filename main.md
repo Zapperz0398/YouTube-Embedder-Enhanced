@@ -21,4 +21,8 @@ if (videoId === null) {
         } else {
             tR += working
 
+            const title = videoData.items[0].snippet.title; 
+            const description = videoData.items[0].snippet.description; 
+            const thumbnailUrl = videoData.items[0].snippet.thumbnails.medium.url;
+
 -%>
