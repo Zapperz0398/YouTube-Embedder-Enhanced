@@ -19,7 +19,11 @@ Therefore, I created this template
 
 ## Prerequisites
 
-In order to use this template, you will need to know the basics of Obsidian, as well as a grasp on how templates work. You will also need to have the [templater plugin](https://github.com/SilentVoid13/Templater) installed and enabled in your vault
+In order to use this template, you will need the following:
+
+- A basic understanding of Obsidian, as well as a grasp on how templates work
+- The [templater plugin](https://github.com/SilentVoid13/Templater) must be installed and enabled in your vault
+- An internet connection must be active on the device, as the template makes web requests to the YouTube API to retrieve the video data
 
 Additionally, you will need a personal YouTube API key, as discussed in the next section.
 
