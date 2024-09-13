@@ -20,7 +20,8 @@ if (videoId === null) {
             tR += "> [!Error]\n> No video found for the provided ID.";
         } else {
             const title = videoData.items[0].snippet.title; 
-            const description = videoData.items[0].snippet.description; 
+            const rawDescription = videoData.items[0].snippet.description;
+            const formattedDescription = rawDescription.replace(/\n/g, ' ');
             const thumbnailUrl = videoData.items[0].snippet.thumbnails.medium.url;
 
             const richPreview = ` <a href="${youtubeUrl}" style="text-decoration: none;">
@@ -30,7 +31,7 @@ if (videoId === null) {
         </div>
         <div style="margin-left: 15px; padding: 10px;">
             <h2 style="margin: 0 0 5px; font-size: 16px; color:#ffffff;">${title}</h2>
-            <p style="margin: 0; font-size: 12px; color: #878484;">${description.substring(0, 100)}...</p>
+            <p style="margin: 0; font-size: 12px; color: #878484;">${formattedDescription.substring(0, 100)}...</p>
             <p style="font-size: 10px; color: #888;">Click to watch on YouTube</p>
         </div>
     </div>
