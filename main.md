@@ -1,7 +1,7 @@
 <%*
 const apiKey = '<API-KEY>';
 
-youtubeUrl = await tp.system.clipboard()
+youtubeUrl = await tp.system.prompt("Enter YouTube URL")
 
 const videoIdMatch = youtubeUrl.match(/v=([a-zA-Z0-9_-]+)/);
 const videoId = videoIdMatch ? videoIdMatch[1] : null;
