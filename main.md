@@ -19,8 +19,6 @@ if (videoId === null) {
         if (videoData.items.length === 0) {
             tR += "> [!Error]\n> No video found for the provided ID.";
         } else {
-            tR += working
-
             const title = videoData.items[0].snippet.title; 
             const description = videoData.items[0].snippet.description; 
             const thumbnailUrl = videoData.items[0].snippet.thumbnails.medium.url;
