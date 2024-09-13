@@ -23,7 +23,7 @@ if (videoId === null) {
             const description = videoData.items[0].snippet.description; 
             const thumbnailUrl = videoData.items[0].snippet.thumbnails.medium.url;
 
-            const richPreview = ` <a href="https://example.com" style="text-decoration: none;">
+            const richPreview = ` <a href="${youtubeUrl}" style="text-decoration: none;">
     <div style="display: flex; align-items: center; max-width: 100vw; font-family: Arial, sans-serif; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
         <div style="flex-shrink: 0; width: 250px; height: 135px;">
             <img src="${thumbnailUrl}" alt="${title}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
