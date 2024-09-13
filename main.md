@@ -29,8 +29,8 @@ if (videoId === null) {
             <img src="${thumbnailUrl}" alt="${title}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
         </div>
         <div style="margin-left: 15px; padding: 10px;">
-            <h2 style="margin: 0 0 5px; font-size: 16px; color: #333;">${title}</h2>
-            <p style="margin: 0; font-size: 12px; color: #666;">${description.substring(0, 100)}...</p>
+            <h2 style="margin: 0 0 5px; font-size: 16px; color:#ffffff;">${title}</h2>
+            <p style="margin: 0; font-size: 12px; color: #878484;">${description.substring(0, 100)}...</p>
             <p style="font-size: 10px; color: #888;">Click to watch on YouTube</p>
         </div>
     </div>
