@@ -16,4 +16,9 @@ if (videoId === null) {
     } else {
         const videoData = await response.json();
 
+        if (videoData.items.length === 0) {
+            tR += "> [!Error]\n> No video found for the provided ID.";
+        } else {
+            tR += working
+
 -%>
