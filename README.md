@@ -68,7 +68,10 @@ Contributions are welcome on this project! Please refer to [contributing.md](con
 
 ## License
 
-This project will be licensed shortly
+This project is licensed under the GNU Affero General Public License v3.0.
+
+See the [LICENSE](./docs/LICENSE) file for full terms & condition, and see the [COPYRIGHT](./docs/COPYRIGHT)
+file for attribution and copyright information
 
 ## Contact
 
