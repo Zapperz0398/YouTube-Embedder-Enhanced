@@ -1,7 +1,8 @@
 <%*
 youtubeUrl = await tp.system.prompt("Enter YouTube URL")
 
-const videoIdMatch = youtubeUrl.match(/v=([a-zA-Z0-9_-]+)/);
+const reggexPattern = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|shorts)\/|.*[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/
+const videoIdMatch = youtubeUrl.match(reggexPattern);
 const videoId = videoIdMatch ? videoIdMatch[1] : null;
 
 if (videoId === null) {
