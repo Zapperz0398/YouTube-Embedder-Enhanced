@@ -56,11 +56,10 @@ Done. You can now add this API key in the `<API_KEY>` section within the templat
 ## Installation
 
 1. Go to the `main.md` file in this repository:
-2. Click on the `main.md` file
-3. Click on the `raw` button - located at the top right of the page with the template
-4. Copy the code and paste it into your Templater folder in your Obsidian Vault
-5. Replace the `API_KEY` placeholder in the template with your actual API key
-6. Voila, you can now call the template, and follow the popups to embed a YouTube video into your notes.
+2. Click on the ' copy raw file' button - located at the top right of the page with the template
+3. Copy the code and paste it into your Templater folder in your Obsidian Vault. Note: press `CTRL + SHIFT + V` to paste the contents in the exact format it was copied in
+4. Replace the `API_KEY` placeholder in the template with your actual API key
+5. Voila, you can now call the template, and follow the popups to embed a YouTube video into your notes.
 
 ## Contributing
 
